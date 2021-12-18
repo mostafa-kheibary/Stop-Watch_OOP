@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+.container{
+    position: relative;
+    text-align: center;
+    width: 400px;
+    height: 700px;
+    outline: solid 20px rgba(214, 214, 214, 0.37);
+    border-radius: 25px;
+}
+.top{
+    height: 300px;
+    background: rgb(123,147,233);
+    background: linear-gradient(56deg, rgba(123,147,233,1) 0%, rgba(206,191,249,1) 100%);
+    border-radius: 25px 25px 0 0;
+}
+.tool-tip{
+    display: flex;
+    justify-content: center;
+
+}
+.tool-tip h2{
+    color: black;
+    font-weight: 100;
+    font-size: 18px;
+}
+.display{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+.down {
+    margin-inline: auto;
+    text-align: center;
+}
+.down .start{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    font-size: 70px;
+    background: rgb(123,147,233);
+    background: linear-gradient(56deg, rgba(123,147,233,1) 0%, rgba(206,191,249,1) 100%);
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.747);
+    outline: solid 20px white;
+    border: none;
+    border-radius: 50%;
+    margin-top: -100px;
+    cursor: pointer;
+    transition: all 150ms ease-out !important;
+}
+.active-color{
+    background: rgb(246,117,122) !important;
+    background: linear-gradient(56deg, rgba(246,117,122,1) 0%, rgba(251,178,166,1) 100%) !important;
+
+}
+.reset{
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius:50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
+    margin-top: 50px;
+    padding: 8px;
+    width: 150px;
+    cursor: pointer;
+}
+@media screen and (max-width:600px){
+    .container{
+        outline: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    .top{
+        border-radius: 0;
+    }
+}
